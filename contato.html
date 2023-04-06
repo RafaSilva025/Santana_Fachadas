@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <meta name="theme-color" content="#ed8f0c" />
+    <meta name="msapplication-navbutton-color" content="#ed8f0c" />
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/b019fa643e.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <div class="spinner">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <section class="header">
+        <!--Header-->
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./img/logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <div class="activeMenu"></div>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <section class="layout-contato">
+        <!--Layout topo-->
+        <div>
+            <h1>Contato</h1>
+        </div>
+    </section>
+
+    <section class="formulario-contato">
+        <!--Formulário de contato-->
+        <div>
+
+            <form action="./php/contato.php" method="POST">
+                <h2>Envie-nos uma mensagem</h2>
+
+                <p>
+                    Solicite um orçamento agora, será um prazer atendê-lo
+                </p>
+
+                <div class="flex1">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+
+                    <div>
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone">
+                    </div>
+                </div>
+
+                <div class="flex2">
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div>
+                        <label for="empresa">Empresa</label>
+                        <input type="text" name="empresa" id="empresa">
+                    </div>
+                </div>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" cols="30" rows="5" id="mensagem"></textarea>
+
+                <div id="msgInput"></div>
+
+                <button id="submit" type="submit">Enviar mensagem</button>
+            </form>
+
+
+            <div class="img-contato">
+                <img src="./img/contato.jpg" alt="imagem de contato">
+
+                <h4>Localidade</h4>
+
+                <p>Vila Medeiros, São Paulo</p>
+                <p>15 de Novembro 1520</p>
+                <p>Zona Norte</p>
+                <p>Segunda a Sabado, das 8h00 as 18h00</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="btn-scroll">
+        <div class="btn-to-top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </div>
+
+    <footer>
+        <!--Footer-->
+        <div class="containerFooter">
+            <div class="nav-bottom">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Portfólio</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="informaçoes">
+                <p>Informações</p>
+                <span><i class="fa-solid fa-phone"></i>(00) 0000-0000</span>
+                <span><i class="fa-solid fa-envelope"></i>contato@teste.com</span>
+                <span><i class="fa-solid fa-clock"></i>Seg. a sex. das 9h ás 18h</span>
+            </div>
+
+            <div class="redes-sociais">
+                <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+            </div>
+        </div>
+
+        <div class="desenvolvedor">
+            <p>Integral comunicação visual &copy; - 2022</p>
+
+            <p>Desenvolvido por: <a href="https://www.dwmcode.com/">dwmcode.com</a></p>
+        </div>
+    </footer>
+
+    <script src="./js/menuHamburguer.js"></script>
+    <script src="./js/btnToTop.js"></script>
+    <script src="./js/validForm.js"></script>
+    <script src="./js/loaderPage.js"></script>
+</body>
+
+</html>
