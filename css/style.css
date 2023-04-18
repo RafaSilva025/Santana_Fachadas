@@ -122,6 +122,9 @@ nav ul a:hover::after{
 .faca-mais .faca-mais-img{
     width: 50%;
 }
+.faca-mais .faca-mais-img{
+    width: 100%;
+}    
 section {
     max-width: 600px;
     margin: 0 auto;
