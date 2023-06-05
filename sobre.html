@@ -2,194 +2,67 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem Somos</title>
-
-    <meta name="theme-color" content="#ed8f0c" />
-    <meta name="msapplication-navbutton-color" content="#ed8f0c" />
-
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b019fa643e.js" crossorigin="anonymous"></script>
+    <title>Sobre | Website html css e javascript</title>
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link css-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-
-    <div class="spinner">
-        <div class="lds-ring">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-
-    <section class="header-sobre">
-        <header>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="./img/logo.png" alt="Logo">
-                </a>
+<body style="background-image: url('img/background-sobre1.jpg')">
+    <header class="menu-principal">
+        <!--Começo Container-->
+        <div class="container"></div>
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            <ul class="ul">
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="servicos.html">Servicos</a>
+                <a class="btn" href="contato.html">Contato</a>
+                <div class="close-icon" onclick="closeMenu()">
+                    <i class="fa fa-times-circle"></i>
+                </div>
+            </ul>
+            <div class="menu-icon" onclick="openMenu()">
+                <i class="fa fa-bars"></i>
             </div>
-
-            <div class="activeMenu"></div>
-
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="sobre.html">Quem Somos</a></li>
-                </ul>
-            </nav>
-        </header>
-    </section>
-
-    <section class="layout-sobre">
-        <div>
-            <h1>Sobre nós</h1>
+        </nav>
+        <section class="banner">
+            <div class="banner-text">
+                <h1>Sobre</h1>
+            </div>
+        </section>
         </div>
-    </section>
-
+        <!--Fim container-->
+    </header>
+    <!--Fim header-->
     <section class="sobre">
-        <div class="historia">
-
-            <div>
-                <h4>Nossa história</h4>
-
-                <h2>Focamos na construção de layout fortes, intuitivos e dinâmicos.</h2>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua.
-
-                    Laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
-                    quis
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+        <div class="container">
+            <div class="sobre-text">
+                <h3>Estamos nesse mercado mais de 8 anos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea id iure alias consequatur numquam deserunt cumque nulla, voluptatem quasi corrupti ducimus optio ex, perspiciatis excepturi blanditiis nesciunt consequuntur iusto quidem?</p>
+                <a href="contato.html" class="btn animate-btn">Entrar em Contato</a>
             </div>
-
-            <img src="./img/pexels-fauxels-3184657.jpg" alt="História">
-
-        </div>
-
-        <div class="abordagem">
-
-            <img src="./img/krakenimages-Y5bvRlcCx8k-unsplash.jpg" alt="abordagem">
-
-            <div>
-                <h4>Nossa abordagem</h4>
-
-                <h2>Sabemos que o usuário está no centro de todos os negócios.</h2>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua.
-
-                    Laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
-                    quis
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="servicos-sobre">
-        <h2>Como podemos te ajudar</h2>
-
-        <div>
-            <div class="servic_sobre">
-                <div>
-                    <h3>Impressão digital</h3>
-                    <p><i class="fa-solid fa-check"></i>Banner</p>
-                    <p><i class="fa-solid fa-check"></i>Outdoor</p>
-                    <p><i class="fa-solid fa-check"></i>Impressão em Lona</p>
-                    <p><i class="fa-solid fa-check"></i>Vinil adesivado</p>
-                </div>
-
-                <div>
-                    <h3>Fachadas</h3>
-                    <p><i class="fa-solid fa-check"></i>Fachadas em ACM</p>
-                    <p><i class="fa-solid fa-check"></i>Letra caixa em ACM</p>
-                    <p><i class="fa-solid fa-check"></i>Stand de vendas</p>
-                </div>
-
-                <div>
-                    <h3>Sinalização</h3>
-                    <p><i class="fa-solid fa-check"></i>Totem</p>
-                    <p><i class="fa-solid fa-check"></i>Letra caixa em PVC</p>
-                    <p><i class="fa-solid fa-check"></i>Letra caixa em acrílico LED</p>
-                    <p><i class="fa-solid fa-check"></i>Letra caixa iluminada</p>
-                </div>
-
-                <div>
-                    <h3>Adesivagem</h3>
-                    <p><i class="fa-solid fa-check"></i>Adesivagem de frota</p>
-                    <p><i class="fa-solid fa-check"></i>Adesivagem de de automóveis</p>
-                    <p><i class="fa-solid fa-check"></i>Adesivagem de eletrodomésticos</p>
-                </div>
+            <div class="sobre-img">
+                <img src="img/sobre.jpg" alt="Sobre">
             </div>
         </div>
     </section>
-
-    <section class="contate-nos">
-        <h2>Pronto para crescer o seu negócio?</h2>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis veniam illum optio natus dignissimos cum.
-        </p>
-
-        <a href="contato.html">CONTATE-NOS</a>
-    </section>
-
-
-    <div class="btn-scroll">
-        <!--Btn Voltar ao topo-->
-        <div class="btn-to-top">
-            <i class="fa-solid fa-arrow-up"></i>
-        </div>
-    </div>
-
-    <footer>
-        <div class="containerFooter">
-            <div class="nav-bottom">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Quem Somos</a></li>
-                </ul>
-            </div>
-
-        <div class="informaçoes">
-            <p>Informações</p>
-            <span><i class="fa-solid fa-phone"></i>(11) 99011-6810</span>
-            <span><i class="fa-solid fa-envelope"></i> santanafachadas@gmail.com</span>
-            <span><i class="fa-solid fa-clock"></i> Seg. a Sab. das 9h as 18h</span>
-        </div>
-
-            <div class="redes-sociais">
-                <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+                <a href="#"> <i class="fa fa-facebook"></i> </a>
+                <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"> <i class="fa fa-tiktok"></i> </a>
             </div>
         </div>
-
-        <div class="desenvolvedor">
-            <p>Santana Fachadas &copy; - 2023</p>
-
-        </div>
+        <p>&copy;RafaSilva 2023.</p>
     </footer>
-
-    <script src="./js/menuHamburguer.js"></script>
-    <script src="./js/btnToTop.js"></script>
-    <script src="./js/loaderPage.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
