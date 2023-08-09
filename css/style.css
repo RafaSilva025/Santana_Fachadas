@@ -20,7 +20,6 @@ body {
 
 section,
 footer {
-    padding: 54px 0;
 }
 
 h3 {
@@ -35,6 +34,7 @@ p {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 5%;
+    text-align: center;
 }
 
 .btn {
@@ -71,7 +71,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 nav ul {
@@ -218,14 +218,14 @@ nav .close-icon{
     transition: 0.3s;
 }
 
-.depoimentos .card-item:haver {
+.depoimentos .card-item:hover {
     background-color: #4f9cf9;
     margin-top: -5px;
 }
 
-.depoimentos .card-item:haver .nome-user,
-.depoimentos .card-item:haver .depoimentos-user,
-.depoimentos .card-item:haver .estrelas i{
+.depoimentos .card-item:hover .nome-user,
+.depoimentos .card-item:hover .depoimentos-user,
+.depoimentos .card-item:hover .estrelas i{
     color: white;
 }
 
