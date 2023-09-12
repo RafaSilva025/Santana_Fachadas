@@ -71,6 +71,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding-top: 10px;
+    
 }
 
 nav ul {
@@ -80,7 +81,7 @@ nav ul {
 
 nav ul a {
     color: white;
-    margin: 0 25px;
+    margin: 0 35px;
     text-transform: uppercase;
     font-size: 14px;
     display: block;
@@ -117,14 +118,16 @@ nav .close-icon{
 }
 
 .banner .banner-text {
-    margin: 70px;
+    margin: 50px;
     text-align: center;
-    padding: 0 90px;
+    padding: 0 50px;
+    color: white;
 }
 
 .banner .banner-text h1 {
     font-size: 96px;
     color: white;
+    font-weight: bold;
 }
 
 .banner .banner-text p {
@@ -143,30 +146,36 @@ nav .close-icon{
 .faca-mais .faca-mais-text {
     width: 50%;
     padding: 0 40px;
+    color: white;
 }
 
 .faca-mais .faca-mais-text h3 {
     font-size: 56px;
+    color: white;
 }
 
 .faca-mais .faca-mais-text p {
-    margin: 5px 0 10px 0;
+    margin: 10px 0 14px 0;
+    color: white;
+}
+
+.faca-mais .faca-mais-img {
+    width: 70%;
 }
 
 .faca-mais .faca-mais-img {
     width: 50%;
-}
-
-.faca-mais .faca-mais-img {
-    width: 100%;
+    /* imagem da tela inicial */
 }
 
 .depoimentos h3 {
+    margin-top: 40px;
     text-align: center;
+    color: white;
 }
 
 .depoimentos p {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -229,16 +238,27 @@ nav .close-icon{
 }
 
 /* clientes */
-.clientes h3,
+.clientes h3
 .clientes p {
     text-align: center;
+    color: white;
+}
+
+.clientes .color {
+    margin-top: 20px;
+    color: white;
 }
 
 .clientes .container div {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between; /* Altere para space-between */
+    flex-wrap: nowrap; /* Evite quebrar os elementos para a próxima linha */
+    margin-bottom: 30px;
+    width: 15%; /* Defina a largura para 25% para que os 4 itens caibam em uma linha */
+    box-sizing: border-box; /* Garanta que as bordas e preenchimento não aumentem a largura */
+    text-align: center; /* Centralize o conteúdo horizontalmente */
+    gap: 10px;
 }
 /* footer */
 footer {
@@ -249,7 +269,7 @@ footer {
 }
 .footer i {
     color: #4f9cf9;
-    font-size: 19px;
+    font-size: 25px;
     background-color: white;
     padding: 10px;
     margin: 3px;
@@ -264,6 +284,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content:space-between;
+    /* background-color: black; */
 }
 .sobre .sobre-text{
     width: 50%;
@@ -271,8 +292,9 @@ footer {
     /* background-color: black; */
 }
 .sobre .sobre-text p{
-    margin: 18px 0;
-    color: #000000a6;
+    margin: 22px 0;
+    color: white;
+    width: 100%;
 }
 .sobre .sobre-img{
     width: 50%;
@@ -348,6 +370,13 @@ footer {
 }
 .dados .dados-item p strong{
     font-size: 28px;
+}
+.servicos .gallery-items{
+    flex-basis: calc(33.33% - 10px); /* Define a largura dos itens com margem à direita */
+    margin-right: 10px; /* Adiciona uma margem à direita entre os itens */
+    margin-bottom: 10px; /* Adiciona uma margem inferior entre os itens */
+    text-decoration: none; /* Remove a sublinhado de links */
+    transition: transform 0.3s ease-in-out; 
 }
 /* end Página Serviço */
 /*Pagina de Contato */
