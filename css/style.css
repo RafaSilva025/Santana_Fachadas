@@ -8,7 +8,6 @@
     outline: none;
     font-family: 'Inter', sans-serif;
 }
-
 body {
     width: 100%;
     height: 100%;
@@ -18,8 +17,7 @@ body {
     background-color: #7d3f97;
 }
 
-section,
-footer {
+section .footer {
 }
 
 h3 {
@@ -35,6 +33,7 @@ p {
     margin: 0 auto;
     padding: 0 5%;
     text-align: center;
+    
 }
 
 .btn {
@@ -118,7 +117,7 @@ nav .close-icon{
 }
 
 .banner .banner-text {
-    margin: 150px;
+    margin: 70px;
     text-align: center;
     padding: 0 90px;
 }
@@ -245,7 +244,6 @@ nav .close-icon{
 footer {
     background-color: #4f9cf9;
     text-align: center;
-    position: fixed;
     bottom: 0;
     width: 100%; /* Para ocupar toda a largura da tela */
 }
@@ -269,7 +267,8 @@ footer {
 }
 .sobre .sobre-text{
     width: 50%;
-    padding-right: 40px;
+    /* padding-right: 40px; */
+    /* background-color: black; */
 }
 .sobre .sobre-text p{
     margin: 18px 0;
@@ -280,7 +279,7 @@ footer {
 }
 .sobre .sobre-img{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 /* end Pagina Sobre */
 /* Página Serviço */
