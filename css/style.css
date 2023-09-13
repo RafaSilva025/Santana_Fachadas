@@ -676,9 +676,6 @@ background-color: #4f9cf9;
     }
 }
 
-
-
-
     /* pagina sobre responsivo*/
     .sobre .container{
         flex-direction: column-reverse;
@@ -689,7 +686,20 @@ background-color: #4f9cf9;
     }
     .sobre .sobre-text{
         margin-top: 40px;
+        word-spacing: 5px;
     }
+    /* Estilos para tornar a imagem responsiva */
+    .sobre-img img {
+    max-width: 100%; /* A imagem se ajustará à largura do contêiner pai */
+    height: auto; /* Mantém a proporção original da imagem */
+    }
+
+    @media (max-width: 768px) {
+    .sobre-text h3 {
+        font-size: 35px;
+        color: white;
+    }
+}
 
     /* Pagina contato responsivo */
     .contato .contato-info{
@@ -709,5 +719,22 @@ background-color: #4f9cf9;
     }
     .faca-mais .faca-mais-text h3{
         font-size: 40px;
+    }
+}
+/* Estilos para telas móveis (largura máxima de 768px) */
+@media (max-width: 768px) {
+    .contato-info {
+        flex-direction: column; /* Altera a direção do flex para coluna */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        text-align: center; /* Centraliza o texto horizontalmente */
+    }
+
+    .contato-info .left-side {
+        margin-right: 0; /* Remove a margem direita */
+        margin-bottom: 20px;
+    }
+
+    .contato-info .left-side div {
+        margin-bottom: 20px; /* Adiciona espaçamento entre os itens */
     }
 }
