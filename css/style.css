@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
 
 * {
     margin: 0;
@@ -6,7 +8,7 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 body {
     width: 100%;
@@ -85,6 +87,7 @@ nav ul a {
     text-transform: uppercase;
     font-size: 14px;
     display: block;
+    font-family: 'Inter', sans-serif;
 }
 
 nav ul a:not(.btn)::after {
@@ -307,6 +310,9 @@ footer {
 /* Página Serviço */
 .servicos h3{
     text-align: center;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .servicos .container > p{
     text-align: center;
@@ -344,6 +350,24 @@ footer {
 .servicos .row-card-item p.descricao-servico{
     transition: 0.3s;
 }
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+}
+.gallery-items img {
+    width: 340px;
+    height: 340px;
+    border: 10px solid #FFF;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform .5s linear;    
+}
+.gallery-items:hover{
+    transform: scale(1.3);
+}
 /* dados */
 .dados{
     background-color: #d3e6fd;
@@ -371,13 +395,6 @@ footer {
 .dados .dados-item p strong{
     font-size: 28px;
 }
-.servicos .gallery-items{
-    flex-basis: calc(33.33% - 10px); /* Define a largura dos itens com margem à direita */
-    margin-right: 10px; /* Adiciona uma margem à direita entre os itens */
-    margin-bottom: 10px; /* Adiciona uma margem inferior entre os itens */
-    text-decoration: none; /* Remove a sublinhado de links */
-    transition: transform 0.3s ease-in-out; 
-}
 /* end Página Serviço */
 /*Pagina de Contato */
 .contato-info {
@@ -391,10 +408,10 @@ footer {
 }
 
 .contato-info .left-side {
-    width: 50px;
-    padding: 30px;
-    background-color: #4f9cf9;
-    border-radius: 14px;
+    /* width: 50px; */
+    padding: 22px;
+    background-color: #769cca6b;
+    border-radius: 30px;
     margin-right: 50px;
     height: fit-content;
 }
@@ -406,8 +423,8 @@ footer {
 }
 
 .contato-info .left-side div i {
-    font-size: 24px;
-    margin-right: 20px;
+    font-size: 30px;
+    margin-right: 6px;
     color: white;
 }
 
@@ -418,6 +435,7 @@ footer {
 
 .contato-info .right-side {
     width: 50%;
+    margin-bottom: 20px;
 }
 
 .contato-info .right-side input,
@@ -436,8 +454,7 @@ footer {
 
 .contato-info .right-side input:focus,
 .contato-info .right-side textarea:focus {
-    border-color: #4f9cf9;
-    
+    border-color: #4f9cf9;    
 }
 
 .contato-info .right-side textarea {
@@ -445,20 +462,34 @@ footer {
     color: #212121;
     border-radius: 9px;
     margin-bottom: 10px;
-    padding: 15px;
+    padding: 35px;
     width: 100%;
     transition: 0.3s;
     resize: none;
 }
 
 .contato-info .right-side button {
-    /* border: none; */
-    border-radius: 10%;
-    border-color: black;
-    padding: 10px;
-    background-color: #4f9cf9;
-    cursor: pointer;
+   background-color: #4f9cf9;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
+
+.contato-info .right-side button:hover {
+background-color: #4f9cf9;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #000000;
+}
+
 
 @media (max-width: 830px) {
     /* menu mobile */
