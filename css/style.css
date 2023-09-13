@@ -738,3 +738,43 @@ background-color: #4f9cf9;
         margin-bottom: 20px; /* Adiciona espaçamento entre os itens */
     }
 }
+/* Estilos para telas móveis (largura máxima de 768px) */
+@media (max-width: 768px) {
+    .dados {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Opcional: centraliza os itens horizontalmente */
+        text-align: center; /* Opcional: centraliza o texto horizontalmente */
+    }
+
+    .dados-item {
+        margin-bottom: 15px; /* Adiciona espaçamento entre os itens */
+    }
+}
+.dados-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .servicos iframe {
+        max-width: 100%; /* Defina a largura máxima para 100% do contêiner pai */
+        height: auto; /* A altura será ajustada automaticamente para manter a proporção original */
+    }
+}
+
+/* Estilos padrão para os cards */
+.row-card-item {
+    width: 30%; /* Defina a largura desejada para os cards */
+    margin: 0 2%; /* Espaçamento entre os cards */
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Estilos para telas menores (largura máxima de 768px) */
+@media (max-width: 768px) {
+    .row-card-item {
+        width: 100%; /* Os cards ocuparão 100% da largura do contêiner pai */
+        margin: 0 0 20px; /* Espaçamento entre os cards na vertical */
+    }
+}
