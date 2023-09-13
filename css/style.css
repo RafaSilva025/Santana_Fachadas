@@ -510,17 +510,22 @@ background-color: #4f9cf9;
         clip-path: circle(141.4% at 100% 0);
     }
     .ul a{
-        margin: 10px 0;
-        font-size: 16px;
+        margin: 20px 0;
+        font-size: 20px;
+        
     }
     nav .menu-icon{
         display: block;
+        margin-right: 50px;
     }
     nav .close-icon{
         display: block;
         position: absolute;
         top: 46px;
         right: 28px;
+    }
+    nav .close-icon:hover{
+        cursor: pointer;
     }
     /* Pagina home responsivo */
     .faca-mais .faca-mais-text{
@@ -538,20 +543,142 @@ background-color: #4f9cf9;
     .faca-mais .faca-mais-img{
         width: 100%;
     }
-    /* Banner responsivo */
-    .banner .banner-text{
-        padding: 0;
-        margin: 80px;
+
+    @media (max-width: 768px) {
+    .banner .banner-text {
+        padding: 40px;
     }
-    .banner.banner-text h1{
-        font-size: 80px;
+
+    .banner .banner-text h3 {
+        font-size: 35px;
     }
-    .banner.banner-text p{
-        font-size: 15px;
+
+    .banner .banner-text p {
+        font-size: 19px;
     }
-    .depoimentos .card-item{
-        width: 100%;
+}
+
+.faca-mais-text {
+    font-size: 16px; /* Tamanho de fonte base */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+@media (max-width: 768px) {
+    /* Estilos para telas menores, como dispositivos móveis */
+    .faca-mais-text {
+        font-size: 19px; /* Tamanho de fonte menor para telas menores */
     }
+}
+
+.faca-mais-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-item img {
+    max-width: 100%;
+    height: auto;
+}
+.depoimento-user {
+    font-size: 16px; /* Tamanho de fonte base */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    /* Estilos para telas menores, como dispositivos móveis */
+    .depoimento-user {
+        font-size: 14px; /* Tamanho de fonte menor para telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-item {
+        margin-bottom: 20px; /* Reduz o espaçamento entre os depoimentos */
+    }
+}
+/* Estilos para telas menores, como dispositivos móveis */
+@media (max-width: 768px) {
+    .depoimentos .container h3 {
+        font-size: 35px; /* Reduz o tamanho da fonte para telas menores */
+    }
+
+    .depoimentos .container p {
+        font-size: 17px; /* Reduz o tamanho da fonte para telas menores */
+        color: white;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 768px) {
+    /* Estilos para telas menores, como dispositivos móveis */
+    .clientes h3 {
+        font-size: 35px; /* Reduz o tamanho da fonte para telas menores */
+    }
+
+    .clientes h4 {
+        font-size: 16px; /* Reduz o tamanho da fonte para telas menores */
+        color: white;
+        margin-top: 10px;
+    }
+}
+/* Estilos padrão para telas maiores */
+.clientes img {
+    max-width: 100%;
+    max-height: 120px; /* Altura máxima das imagens */
+    height: auto;
+    display: inline-block; /* Mantém as imagens em linha em telas maiores */
+    margin-right: 10px; /* Adiciona um espaço horizontal entre as imagens */
+}
+
+/* Estilos para telas menores, como dispositivos móveis */
+@media (max-width: 768px) {
+    .clientes img {
+        display: block; /* Torna as imagens blocos, uma abaixo da outra */
+        margin: 10px auto; /* Adiciona espaçamento vertical entre as imagens e centraliza-as horizontalmente */
+        margin-right: 0; /* Remove o espaço horizontal entre as imagens */
+    }
+}
+
+/* footer Responsivo*/
+/* Estilos padrão para telas maiores */
+.footer {
+    color: #fff; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+    text-align: center; /* Alinhar o conteúdo ao centro */
+}
+
+.footer .links {
+    margin-bottom: 10px; /* Espaçamento inferior entre os ícones e o texto de direitos autorais */
+}
+
+.footer a {
+    color: #fff; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    margin: 0 10px; /* Espaçamento horizontal entre os ícones */
+}
+
+/* Estilos para telas menores, como dispositivos móveis */
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 0; /* Mantém o mesmo espaçamento interno */
+    }
+
+    .footer .links {
+        margin-bottom: 20px; /* Aumenta o espaçamento inferior entre os ícones e o texto de direitos autorais */
+    }
+
+    .footer a {
+        font-size: 36px; /* Aumenta o tamanho dos ícones para telas menores */
+    }
+
+    .footer p {
+        font-size: 14px; /* Reduz o tamanho do texto de direitos autorais para telas menores */
+    }
+}
+
+
+
+
     /* pagina sobre responsivo*/
     .sobre .container{
         flex-direction: column-reverse;
@@ -563,6 +690,7 @@ background-color: #4f9cf9;
     .sobre .sobre-text{
         margin-top: 40px;
     }
+
     /* Pagina contato responsivo */
     .contato .contato-info{
         flex-direction: column-reverse;

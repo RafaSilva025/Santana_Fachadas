@@ -1,7 +1,14 @@
-const effectmenuOpen = document.querySelector('.activeMenu');
+const menuButton = document.querySelector('.menu-icon');
+const closeButton = document.querySelector('.close-icon');
+const navList = document.querySelector('.ul');
 
-const openMenu = document.querySelector('.nav-list');
+function openMenu() {
+    navList.classList.add('open');
+}
 
-effectmenuOpen.addEventListener('click', function () {
-    openMenu.classList.toggle('openMenu')
-})
+function closeMenu() {
+    navList.classList.remove('open');
+}
+
+menuButton.addEventListener('click', openMenu);
+closeButton.addEventListener('click', closeMenu);
