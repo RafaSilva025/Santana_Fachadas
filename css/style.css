@@ -283,30 +283,85 @@ footer {
     color: white;
 }
 /* Página Sobre */
-.sobre .container{
+.sobre .container {
     display: flex;
     align-items: center;
-    justify-content:space-between;
-    /* background-color: black; */
+    justify-content: space-between;
 }
-.sobre .sobre-text{
+
+.sobre .sobre-text {
     width: 50%;
     /* padding-right: 40px; */
     /* background-color: black; */
 }
-.sobre .sobre-text p{
+
+.sobre .sobre-text h2 {
+    color: #fff; /* Adicionei a cor para o título */
+}
+
+.sobre .sobre-text p {
     margin: 22px 0;
     color: white;
     width: 100%;
 }
-.sobre .sobre-img{
+
+.sobre .sobre-img {
     width: 50%;
 }
-.sobre .sobre-img{
+
+.sobre .sobre-img img {
     width: 100%;
     border-radius: 20px;
 }
-/* end Pagina Sobre */
+
+/* Destaques */
+.destaques {
+    background-color: #4f9cf9; /* Adicionei uma cor de fundo para a seção de destaques */
+    padding: 40px 0;
+}
+
+.destaques h2 {
+    color: #333; /* Adicionei uma cor para o título */
+}
+
+.destaques .destaque-item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.destaques .destaque-item i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #007bff; /* Adicionei uma cor para os ícones */
+}
+
+/* Equipe */
+.equipe {
+    padding: 40px 0;
+    background-color: #fff; /* Adicionei uma cor de fundo para a seção da equipe */
+}
+
+.equipe h2 {
+    color: #333; /* Adicionei uma cor para o título */
+}
+
+.equipe p {
+    color: #555; /* Adicionei uma cor para o texto */
+}
+
+/* Footer */
+.footer {
+    background-color: #333; /* Adicionei uma cor de fundo para o rodapé */
+    color: #fff; /* Adicionei uma cor para o texto do rodapé */
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #fff; /* Adicionei uma cor para os links no rodapé */
+}
+
+/* end Página Sobre */
 /* Página Serviço */
 .servicos h3{
     text-align: center;

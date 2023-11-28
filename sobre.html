@@ -5,62 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre | Santana Fachadas</title>
-    <!-- Font awesome-->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Link css-->
+    <!-- Link CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Adicione estilos personalizados aqui se necessário */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Adicione mais estilos conforme necessário */
+        /* ... */
+    </style>
 </head>
 
 <body style="background-image: url('img/background-sobre1.jpg')">
     <header class="menu-principal">
-        <!--Começo Container-->
-        <div class="container"></div>
-        <nav>
-            <a href="index.html"><img id="logo" src="img/logo-santana.png" alt="Logo"></a>
-            <ul class="ul">
-                <a href="index.html">Home</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="servicos.html">Serviços</a>
-                <a class="btn" href="contato.html">Contato</a>
-                <div class="close-icon" onclick="closeMenu()">
-                    <i class="fa fa-times-circle"></i>
+        <div class="container">
+            <nav>
+                <a href="index.html"><img id="logo" src="img/logo-santana.png" alt="Logo"></a>
+                <ul class="ul">
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a class="btn" href="contato.html">Contato</a>
+                    <div class="close-icon" onclick="closeMenu()">
+                        <i class="fa fa-times-circle"></i>
+                    </div>
+                </ul>
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa fa-bars"></i>
                 </div>
-            </ul>
-            <div class="menu-icon" onclick="openMenu()">
-                <i class="fa fa-bars"></i>
-            </div>
-        </nav>
-        <section class="banner">
-            <div class="banner-text">
-                <h1>Nossa Historia</h1>
-            </div>
-        </section>
+            </nav>
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Nossa História</h1>
+                </div>
+            </section>
         </div>
-        <!--Fim container-->
     </header>
-    <!--Fim header-->
+
     <section class="sobre">
         <div class="container">
             <div class="sobre-text">
-                <h3>Estamos nesse mercado mais de 28 anos</h3>
-                <p>Nossa jornada começou em 1995, quando a SANTANA FACHADAS foi fundada e iniciou a sua operação com foco principal na fabricação de fachadas pela cidade de São Paulo. Desde o início, temos no nosso DNA a utilização de tecnologia e inovação em todos os processos sempre em busca de eficiência e excelência na entrega de nossos produtos e serviços.
-
-                Com esse pensamento, ampliamos nosso portfólio de produtos e serviços para atendermos os mais variados projetos de comunicação visual e identificação. Atualmente, já somamos mais de 20 mil clientes atendidos em todo país e seguimos com o propósito e a missão de oferecer soluções que atendam às necessidades dos nossos clientes e não medimos esforços para isso.</p>
+                <h2>Bem-vindo à Santana Fachadas</h2>
+                <p>Nossa jornada começou em 1995, quando a SANTANA FACHADAS foi fundada em São Paulo. Desde então, dedicamos mais de 28 anos à fabricação de fachadas, utilizando tecnologia e inovação para fornecer produtos de qualidade aos nossos clientes.</p>
+                <p>Hoje, somos referência em comunicação visual, atendendo projetos por todo o Brasil. Com mais de 20 mil clientes satisfeitos, continuamos comprometidos com a eficiência e a excelência em tudo o que fazemos.</p>
             </div>
             <div class="sobre-img">
                 <img src="img/sobre-capa.png" alt="Sobre">
             </div>
         </div>
     </section>
-    <!--Footer-->
+
+    <section class="destaques">
+        <div class="container">
+            <h2>Nossos Destaques</h2>
+            <div class="destaque-item">
+                <i class="fa fa-check-circle"></i>
+                <p>Produtos de alta qualidade</p>
+            </div>
+            <div class="destaque-item">
+                <i class="fa fa-clock"></i>
+                <p>Mais de 28 anos de experiência</p>
+            </div>
+            <div class="destaque-item">
+                <i class="fa fa-globe"></i>
+                <p>Atendemos todo o Brasil</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="equipe">
+        <div class="container">
+            <h2>Nossa Equipe</h2>
+            <p>Nossa equipe é composta por profissionais qualificados e dedicados, prontos para atender às necessidades dos nossos clientes. Trabalhamos juntos para garantir a satisfação e o sucesso de cada projeto.</p>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="container">
             <div class="links">
-                <a href="https://www.facebook.com/renataadailson.santana"> <i class="fa fa-facebook"></i> </a>
-                <a href=""><i class="fa fa-whatsapp"></i> </a>
-                <a href="https://www.instagram.com/santana_fachadas/"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/renataadailson.santana"><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/santana_fachadas/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
         </div>
         <p>&copy;RafaSilva 2023.</p>
