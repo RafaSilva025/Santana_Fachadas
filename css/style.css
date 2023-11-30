@@ -296,13 +296,19 @@ footer {
 }
 
 .sobre .sobre-text h2 {
-    color: #fff; /* Adicionei a cor para o título */
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    letter-spacing: 1px; /* Ajusta o espaçamento das letras para destacar o título */
 }
 
 .sobre .sobre-text p {
     margin: 22px 0;
     color: white;
     width: 100%;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.5px; /* Ajusta o espaçamento das letras para os parágrafos */
 }
 
 .sobre .sobre-img {
@@ -623,7 +629,7 @@ background-color: #4f9cf9;
 }
 
 .faca-mais-text {
-    font-size: 16px; /* Tamanho de fonte base */
+    font-size: 18px; /* Tamanho de fonte base */
     line-height: 1.5; /* Espaçamento entre linhas */
 }
 
