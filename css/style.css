@@ -16,7 +16,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #7d3f97;
+    background-color: black;
 }
 
 section .footer {
@@ -172,6 +172,11 @@ nav .close-icon{
 }
 
 .depoimentos h3 {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+.depoimentos h4 {
     margin-top: 40px;
     text-align: center;
     color: white;
@@ -186,6 +191,7 @@ nav .close-icon{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .depoimentos .card-item {
@@ -209,12 +215,17 @@ nav .close-icon{
     font-size: 20px;
     margin-bottom: 15px;
     transition: 0.3s;
+    color: black;
 }
 
 .depoimentos .card-item .depoimentos-user {
     font-size: 15px;
     padding: 0 15px;
     transition: 0.3s;
+}
+
+.color, .items-center {
+    color: white;
 }
 
 .depoimentos .card-item .estrelas {
@@ -290,7 +301,8 @@ footer {
 }
 
 .sobre .sobre-text {
-    width: 50%;
+    width: 100%;
+    align-items: center;
     /* padding-right: 40px; */
     /* background-color: black; */
 }
@@ -559,7 +571,32 @@ background-color: #4f9cf9;
   cursor: pointer;
   box-shadow: 0 0 10px #000000;
 }
+/* Pagina de obrigado */
 
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #101026;
+    flex-direction: column;
+}
+.text{
+    font-size: 455px;
+    color: #f5f5f5;
+    margin-bottom: 50px;
+}
+.btn{
+    padding: 15px 55px;
+    background: #f5f5f5;
+    text-decoration: none;
+    color: #101026;
+    font-size: 18px;
+    transition: all 0.5s ;
+}
+.btn:hover{
+    border-radius: 16px;
+}
 
 @media (max-width: 830px) {
     /* menu mobile */
