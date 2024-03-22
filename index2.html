@@ -21,11 +21,29 @@
             min-width: 600px; /* Defina o tamanho do carrossel conforme necessário */
             flex: 0 0 auto;
             margin-right: 20px; /* Adicione um espaçamento entre as imagens */
+            position: relative;
         }
 
         .slide img {
-            width: 100%;
+            width: 50%;
             height: auto;
+        }
+
+        .slide .text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .slide.active .text {
+            opacity: 1;
         }
 
         .navigation {
@@ -50,15 +68,19 @@
         <div class="slides">
             <div class="slide">
                 <img src="img/galeria18.jpeg" alt="Imagem 1">
+                <div class="text">Fachadas</div>
             </div>
             <div class="slide">
                 <img src="img/galeria17.jpeg" alt="Imagem 2">
+                <div class="text">Letreiros</div>
             </div>
             <div class="slide">
                 <img src="img/galeria16.jpeg" alt="Imagem 3">
+                <div class="text">Totem</div>
             </div>
             <div class="slide">
                 <img src="img/galeria15.jpeg" alt="Imagem 4">
+                <div class="text">Texto da Imagem 4</div>
             </div>
         </div>
 
@@ -78,16 +100,24 @@
         prev.addEventListener('click', function() {
             if (currentSlide > 0) {
                 currentSlide--;
-                slides.style.transform = 'translateX(-' + currentSlide * slideWidth + 'px)';
+                updateSlide();
             }
         });
 
         next.addEventListener('click', function() {
             if (currentSlide < slides.children.length - 1) {
                 currentSlide++;
-                slides.style.transform = 'translateX(-' + currentSlide * slideWidth + 'px)';
+                updateSlide();
             }
         });
+
+        function updateSlide() {
+            slides.style.transform = 'translateX(-' + currentSlide * slideWidth + 'px)';
+            for (var i = 0; i < slides.children.length; i++) {
+                slides.children[i].classList.remove('active');
+            }
+            slides.children[currentSlide].classList.add('active');
+        }
     </script>
 </body>
 </html>
