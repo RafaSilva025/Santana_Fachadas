@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/filter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <title>Document</title>
 </head>
 <body>
@@ -31,5 +33,32 @@
         </ul>
     </section>
     
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+    $('.filter .item').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+
+        $(".itens").fadeOut();
+        setTimeout(function(){
+            $(".itens").fadeIn();
+        }, 400);
+
+        let value = $(this).attr("data-filter");
+
+        setTimeout(function(){
+            if(value === 'todos'){
+                $(".itens .item").show('500');
+            }else{
+                $(".itens .item").hide("500").filter("." + value).show("500");
+            }
+        }, 400);
+
+        console.log(value);
+    });
+});
+
+    </script>
 </body>
 </html>
