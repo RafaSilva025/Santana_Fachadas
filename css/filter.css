@@ -49,11 +49,10 @@ body{
 }
 
 .itens .item img {
-    position: absolute;
+    position: static;
     width: 100%;
     height: 100%;
     object-fit: cover;
     max-width: 100%; /* Define o tamanho máximo da imagem */
     max-height: 100%; /* Define a altura máxima da imagem */
-    background-color: blue;
 }
