@@ -477,6 +477,54 @@ footer {
 .dados .dados-item p strong{
     font-size: 28px;
 }
+
+.servicos .content {
+    padding: 100px 0;
+    background-color: black;
+}
+
+.servicos .filter {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 45px;
+}
+
+.servicos .filter .item {
+    background-color: #ccc;
+    color: black;
+    padding: 5px 10px;
+    margin: 0 10px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+    background-color: red;
+}
+
+.servicos .itens {
+    display: flex;
+    flex-direction: column; /* Alteração: alinhar verticalmente */
+    align-items: center; /* Centralizar os itens verticalmente */
+    list-style: none;
+}
+
+.servicos .itens .item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    background-color: black;
+}
+
+.servicos .itens .item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: blue;
+}
 /* end Página Serviço */
 /*Pagina de Contato */
 .contato-info {
