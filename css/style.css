@@ -480,7 +480,6 @@ footer {
 
 .servicos .content {
     padding: 100px 0;
-    background-color: black;
 }
 
 .servicos .filter {
@@ -498,33 +497,28 @@ footer {
     height: 30px;
     cursor: pointer;
     text-align: center;
-    background-color: red;
 }
 
 .servicos .itens {
     display: flex;
-    flex-direction: column; /* Alteração: alinhar verticalmente */
-    align-items: center; /* Centralizar os itens verticalmente */
+    flex-wrap: wrap; /* Permite que os itens se quebrem em várias linhas */
+    justify-content: center; /* Centraliza os itens horizontalmente */
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .servicos .itens .item {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 50px;
-    background-color: black;
+    width: calc(33.33% - 100px); /* Define a largura para 33.33% menos um espaçamento de 100px */
+    margin: 25px; /* Espaçamento entre os itens */
+    text-align: center;
 }
 
 .servicos .itens .item img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     max-width: 100%;
-    max-height: 100%;
-    background-color: blue;
+    height: auto;
 }
+
 /* end Página Serviço */
 /*Pagina de Contato */
 .contato-info {
