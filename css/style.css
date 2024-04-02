@@ -292,6 +292,7 @@ footer {
 .footer p {
     margin-top: 10px;
     color: white;
+    
 }
 /* Página Sobre */
 .sobre .container {
@@ -301,9 +302,8 @@ footer {
 }
 
 .sobre .sobre-text {
-    width: 100%;
-    align-items: center;
-    /* padding-right: 40px; */
+    text-align: center;
+    padding: 40px; 
     /* background-color: black; */
 }
 
@@ -356,16 +356,17 @@ footer {
 
 /* Equipe */
 .equipe {
-    padding: 40px 0;
-    background-color: #fff; /* Adicionei uma cor de fundo para a seção da equipe */
+    padding: 50px 0;
 }
 
 .equipe h2 {
-    color: #333; /* Adicionei uma cor para o título */
+    color: #ffffff; /* Adicionei uma cor para o título */
 }
 
 .equipe p {
-    color: #555; /* Adicionei uma cor para o texto */
+    color: #ffffff; /* Adicionei uma cor para o texto */
+    font-size: 25px;
+    padding: 20px;
 }
 
 /* footer */
@@ -379,8 +380,7 @@ footer {
     color: #4f9cf9;
     font-size: 25px;
     background-color: white;
-    padding: 10px;
-    margin: 3px;
+    margin: 6px;
     border-radius: 10px;
 }
 .footer p {
@@ -955,6 +955,7 @@ background-color: #4f9cf9;
     .sobre .sobre-text{
         margin-top: 40px;
         word-spacing: 5px;
+        text-align: center;
     }
     /* Estilos para tornar a imagem responsiva */
     .sobre-img img {
