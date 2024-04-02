@@ -493,11 +493,29 @@ footer {
 .servicos .filter .item {
     background-color: #ccc;
     color: black;
-    padding: 5px 10px;
+    padding: 5px 20px;
     margin: 0 10px;
     height: 30px;
     cursor: pointer;
     text-align: center;
+    border-radius: 5%;
+    position: relative; /* Adicionando posição relativa */
+}
+
+.servicos .filter .item::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Posicionando a linha abaixo do botão */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: blue; /* Cor da linha */
+    transition: all 0.3s ease; /* Adicionando transição para um efeito suave */
+    transform: scaleX(0); /* Inicialmente esconde a linha */
+}
+
+.servicos .filter .item:hover::after {
+    transform: scaleX(1); /* Mostra a linha quando passa o mouse */
 }
 
 .servicos .itens {
