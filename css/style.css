@@ -443,9 +443,9 @@ footer {
     padding: 0 2vw;
 }
 .gallery-items img {
-    width: 300px; /* Defina a largura desejada para as imagens */
+    width: 500px; /* Defina a largura desejada para as imagens */
     height: auto; /* Defina a altura como automática para manter a proporção original */
-    max-height: 200px; /* Defina a altura máxima para evitar que as imagens se tornem muito grandes */
+    max-height: 250px; /* Defina a altura máxima para evitar que as imagens se tornem muito grandes */
     object-fit: cover; /* Faz com que a imagem mantenha sua proporção e preencha o espaço, cortando se necessário */
     border: 10px solid #FFF;
     box-shadow: 5px 5px 5px #0006;
