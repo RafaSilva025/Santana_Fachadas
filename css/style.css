@@ -427,8 +427,10 @@ footer {
     padding: 9px;
 }
 .servicos .row-card-item p.nome-servico{
-    margin: 5px 0;
+    margin: 15px 0;
     transform: 0.3s;
+    text-align: center;
+    font-weight: bold;
 }
 .servicos .row-card-item p.descricao-servico{
     transition: 0.3s;
@@ -441,11 +443,12 @@ footer {
     padding: 0 2vw;
 }
 .gallery-items img {
-    width: 340px;
-    height: 340px;
+    width: 300px; /* Defina a largura desejada para as imagens */
+    height: auto; /* Defina a altura como automática para manter a proporção original */
+    max-height: 200px; /* Defina a altura máxima para evitar que as imagens se tornem muito grandes */
+    object-fit: cover; /* Faz com que a imagem mantenha sua proporção e preencha o espaço, cortando se necessário */
     border: 10px solid #FFF;
     box-shadow: 5px 5px 5px #0006;
-    flex-grow: 1;
     transition: transform .5s linear;    
 }
 .gallery-items:hover{
@@ -509,7 +512,7 @@ footer {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: blue; /* Cor da linha */
+    background-color: rgb(255, 255, 255); /* Cor da linha */
     transition: all 0.3s ease; /* Adicionando transição para um efeito suave */
     transform: scaleX(0); /* Inicialmente esconde a linha */
 }
