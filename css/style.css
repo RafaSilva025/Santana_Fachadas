@@ -20,7 +20,9 @@ body {
 }
 
 section .footer {
-}
+}<div class="faca-mais-img">
+<img src="img/tela-home.jpeg" alt="">
+</div>
 
 h3 {
     font-size: 50px;
@@ -165,12 +167,12 @@ nav .close-icon{
 
 .faca-mais .faca-mais-img {
     width: 70%;
+    border-radius: 10px; /* Arredondamento dos cantos */
+    padding: 5px; /* Espaçamento interno da imagem */
+    max-width: 100%; /* Para manter a imagem responsiva */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma leve sombra */
 }
 
-.faca-mais .faca-mais-img {
-    width: 50%;
-    /* imagem da tela inicial */
-}
 
 .depoimentos h3 {
     margin-top: 20px;
@@ -253,10 +255,23 @@ nav .close-icon{
 }
 
 /* clientes */
-.clientes h3
+.clientes h1
 .clientes p {
     text-align: center;
     color: white;
+    
+}
+.clientes div {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaçamento entre as imagens */
+    flex-wrap: wrap; /* Para quebrar a linha se houver muitas imagens */
+}
+
+.clientes img {
+    max-width: 100px; /* Ajuste conforme necessário para limitar o tamanho */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 .clientes .color {
